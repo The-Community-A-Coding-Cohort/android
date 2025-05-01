@@ -49,17 +49,21 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)
     implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.tv.foundation)
     implementation(libs.androidx.tv.material)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.mux.player)
+
+    // Test dependencies
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+
+    // Debug dependencies
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }

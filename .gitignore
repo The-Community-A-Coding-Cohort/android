@@ -1,3 +1,5 @@
 .nvimlog
 .gradle
+.idea
 build/
+secrets.properties
