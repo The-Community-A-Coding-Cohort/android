@@ -1,1 +1,5 @@
-We need to decide if we want to code two seperate apps or do a code-once approach.
+# Indigo Garden Club Android
+
+Android TV client for the Indigo Garden Club app.
+
+More to come soon...
